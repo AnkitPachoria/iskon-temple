@@ -1,0 +1,88 @@
+/* Centering the form container */
+form {
+  margin-top: 20%;
+  width: 100%;
+  max-width: 350px; 
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #ffffff; 
+  border-radius: 12px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  text-align: center; /* Center the text */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styling input fields */
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+  font-size: 16px;
+  background-color: #f9f9f9; 
+  color: #333; 
+  box-sizing: border-box; 
+}
+
+/* Focus effect for input fields */
+input:focus {
+  outline: none;
+  border-color: #2b2d42; 
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3); 
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #2b2d42; 
+  color: white;
+  border: none;
+  border-radius: 8px; 
+  font-size: 18px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  box-sizing: border-box; 
+  margin-top: 10px;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #2b2d42; 
+}
+
+/* Button disabled state (showing loading text) */
+button:disabled {
+  background-color: #2b2d42 ;
+  cursor: not-allowed; 
+}
+
+/* Styling placeholder text */
+input::placeholder {
+  color: #aaa;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+    max-width: 90%;
+    margin-top: 50%;
+  }
+
+  button {
+    font-size: 16px; 
+    padding: 14px;
+  }
+
+  input {
+    font-size: 16px; 
+    padding: 14px; 
+  }
+}

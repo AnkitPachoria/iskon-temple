@@ -1,0 +1,209 @@
+/* General styling for the container */
+.dashboard-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Profile Card Styling - Position the profile card in the top right */
+.profile-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-bottom: 30px;
+  /* position: absolute; */
+  top: 20px;
+  right: 20px;
+}
+
+.profile-card h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.profile-card p {
+  color: #555;
+  font-size: 16px;
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Submission Form Styling */
+.submission-form {
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; 
+}
+
+.submission-form div {
+  margin-bottom: 15px;
+} 
+
+.submission-form label {
+  font-size: 16px;
+  color: #333;
+}
+
+.submission-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.submission-form button {
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.submission-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.submission-form button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Error Message Styling */
+.error {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  padding: 12px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #e03e3e;
+}
+
+/* Jap Counts Table Styling */
+.jap-counts-table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.jap-counts-table th,
+.jap-counts-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.jap-counts-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+
+.jap-counts-table td {
+  background-color: #fff;
+  color: #555;
+}
+
+.jap-counts-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.jap-counts-table tr:hover {
+  background-color: #e2f4e2;
+}
+
+.jap-counts-table button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.jap-counts-table button:hover {
+  background-color: #45a049;
+}
+
+/* Mobile specific styling */
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .profile-card {
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .submission-form {
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px; /* Reduced margin for mobile */
+  }
+
+  .profile-card h2 {
+    font-size: 20px;
+  }
+
+  .profile-card p {
+    font-size: 14px;
+  }
+
+  .submission-form button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .logout-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
