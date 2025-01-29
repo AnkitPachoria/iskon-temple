@@ -25,7 +25,7 @@
   db.connect((err) => {
     if (err) {
       console.error('Database connection failed:', err.stack);
-      return;
+      return; 
     }
     console.log('Connected to the japmala database!');
   });
@@ -38,7 +38,7 @@
   // CORS configuration to allow frontend requests
   app.use(cors({
     origin: process.env.REACT_APP_FRONTEND_URL,  // React app URL, e.g. 'https://iskcon.wa1.online'
-    credentials: true,  // Allow cookies to be sent with requests
+    credentials: true, 
   }));
 
   // Middleware setup
@@ -46,7 +46,7 @@
   app.use(cookieParser());
   app.use(morgan('dev'));
   app.use(helmet());
-
+ 
   // Authentication middleware to check for JWT token in Authorization header
   const authenticateToken = (req, res, next) => {
     const authHeader = req.header('Authorization');
@@ -67,7 +67,7 @@
       req.user = user;  // Attach user information to the request object
       next();
     });
-  }; 
+  };  
 
   // API endpoint to submit user data (name, mobile, location, dob)
   app.post('/api/user/submit', (req, res) => {
@@ -259,3 +259,5 @@
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
   });
+ 
+  
