@@ -14,11 +14,12 @@
 
   // Database connection using mysql2
   const db = mysql.createConnection({
-    host: process.env.DB_HOST || 'localhost',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || '',  // Ensure to update your MySQL password if necessary
-    database: process.env.DB_NAME || 'japmala',  // Database name
+    host: 'localhost',
+    user: 'u274451955_iskon_usm',
+    password: '1OgM!/6U>r',  // Empty password for XAMPP default MySQL setup
+    database: 'u274451955_iskon_dbm',  // Your database name
   });
+  
   
 
   // Connect to the database
